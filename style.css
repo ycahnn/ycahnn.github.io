@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 .container {
@@ -11,22 +13,31 @@ body {
 }
 
 nav {
-    color: red;
     background-color: #333;
     color: #fff;
     padding: 1em 0;
+}
+
+nav h1 {
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 0.5em 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd700; /* change color on hover */
 }
 
 header {
@@ -36,8 +47,28 @@ header {
     padding: 4em 0;
 }
 
+.intro-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+}
+
 section {
     padding: 4em 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #333;
 }
 
 .project {
@@ -47,17 +78,51 @@ section {
 .project img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 1em;
 }
 
 form {
     display: grid;
     grid-gap: 1em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 button {
     background-color: #333;
     color: #fff;
-    padding: 0.5em 1em;
+    padding: 0.8em 1.5em;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffd700; /* change color on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
 }
