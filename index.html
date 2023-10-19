@@ -6,39 +6,52 @@
     <title>Your Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        #main{
+            
+        }
+
         #top_container{ 
             border: 1px solid black;
             width: 80%; 
             height: 100px;
-            margin: 0 auto; 
             text-align: center;
+            position: absolute;
+            top: 0px;
+            left: 20rem;
         }
         #text{
-            text-align: center;
-            font-size: 3rem;
-            display: inline;
+           
         }
         #cursor {
             display: inline-block;
             animation: blink 1s infinite;
             font-size: 3rem;
-
         }
-        @keyframes blink {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0;
-            }
+        #side_bar{
+            border: 1px solid black;
+            width: 20%;
+            height: 100%;
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
         }
+     
     </style>
+
 </head>
 <body>
-    <div id = "top_container">
-        <div id="text"></div>
-        <div id="cursor">_</div>
+    <div id = "side_bar">
     </div>
+    <div id = "top_container">
+        <div>
+            hello
+        </div>
+    </div>
+    <!-- <div id = "top_container">
+        <div id="text">Youngchan</div>
+        <div id="cursor">_</div>
+    </div> -->
     <!-- <script src="script.js"></script> -->
 </script>
 </body>
