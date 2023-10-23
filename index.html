@@ -111,6 +111,7 @@
         {
             background: rgb(51, 51, 51);  
             border-bottom: rgb(51, 51, 51);
+            z-index: 20;
             color:white;
         }  
         #r1:checked ~ #contents #slides li{
@@ -168,13 +169,14 @@
             left: 0%;
             display: flex;
             z-index: 3;
-            height: 1.5rem;
+            height: 2rem;
             width: 100%;
             
         }
         .bar{
             width: 7rem;
             height: 100%;
+            line-height: 2rem;
             background-color: rgb(30, 30, 30);
             color: rgb(188, 188, 188);
             text-align: center;
@@ -182,13 +184,14 @@
             font-size: 0.9rem;
         }
         .top_bars{
-            border: 1px solid grey;
-            height: 1.5rem;
+            border: 1px solid rgb(89, 89, 89);
+            border-bottom: 3px solid rgb(89, 89, 89);
+            height: 1.9rem;
             border-left: none;
         }
         .bar_tail{
             flex-grow: 1;
-            height: 100%;
+            border-bottom: 10px solid rgb(89, 89, 89);
             background-color: rgb(30, 30, 30);
             margin:0px  0px;
         }
@@ -313,7 +316,7 @@
             height:1.5rem;
             background-color: rgb(51, 51, 51);
             z-index:5;
-            top: 1.5rem;
+            top: 2rem;
             box-shadow: 0px 5px 5px -3px;
         }
         #title_label{
@@ -324,7 +327,6 @@
             font-size: 0.9rem;
             left:4rem;
             line-height: 1.5rem;
-            color:rgb(248, 199, 139);
         }
         .bold{
             position: absolute;
@@ -335,7 +337,6 @@
             'opsz' 24;
             font-size: 1.3rem;
             line-height: 1.5rem;
-
             color:rgb(203, 112, 0)
         }
     </style>
@@ -349,17 +350,13 @@
         <input type="radio" name = 'rad' id = "r5" class = "radio_buttons">  
 
 
-        <div id = "side_bar">      
+        <div id = "side_bar">    
+            <div style = "font-size: 0.8rem; color:rgb(190, 190, 190);margin: 0 1rem; margin-top:0.5rem; margin-bottom: 0.48rem;">EXPLORER</div>
+
             <input type="checkbox" id = "title_check" class = "checkboxes">
             <input type="checkbox" id = "info1_check" class = "checkboxes">
             <input type="checkbox" id = "info2_check" class = "checkboxes">
             <input type="checkbox" id = "info3_check" class = "checkboxes">
-<!-- 
-            <label for = "info1_check" id = "info1_label" class = "info_label">
-                <span class="material-symbols-outlined" id="arrow_right">chevron_right</span>
-                <span class="material-symbols-outlined"id="arrow_down">expand_more</span>
-                <span class = "folder">profile</span>
-            </label> -->
             <label for = "title_check" id = "title_label" class = "info_label_top">
                 <span class="material-symbols-outlined" id="arrow_down"  style = "font-variation-settings:
                 'wght' 400;" >chevron_right</span>
