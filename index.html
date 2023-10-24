@@ -51,6 +51,8 @@
             padding: 0;
         }
         #slide{
+            display:flex;
+            flex-direction: column;
             background-color: rgb(51, 51, 51);;
             width: 100%;
             height: 100%;
@@ -69,6 +71,7 @@
                 display:none;
             }
         }
+
         #side_bar img{
             display: block;
             width:60%; 
@@ -119,6 +122,7 @@
             border-bottom: rgb(51, 51, 51);
             z-index: 20;
             color:white;
+            box-shadow: none;
         }  
         #r1:checked ~ #contents #slides li{
             transform: translate(0, 0);
@@ -146,9 +150,8 @@
             left: 0%;
             display: flex;
             z-index: 3;
-            height: 2rem;
+            height: 2.1rem;
             width: 100%;
-            
         }
         .bar{
             width: 7rem;
@@ -163,8 +166,9 @@
         .top_bars{
             border: 1px solid rgb(89, 89, 89);
             border-bottom: 3px solid rgb(89, 89, 89);
-            height: 1.9rem;
+            height: 2rem;
             border-left: none;
+            
         }
         .bar_tail{
             flex-grow: 1;
@@ -250,11 +254,12 @@
             z-index: -1;
         }
         .page{
-            font-size: 3rem;
+            display:flex;
             background: rgb(51, 51, 51);  
             width: 100%;
-            height: 100%;
-            position:relative
+            position:relative;
+            flex-grow: 1;
+            margin-top: 3.5rem;
         }
         .page_content{
             width:94%;
@@ -351,6 +356,68 @@
 	        grid-row-start: 1;
 	        grid-row-end: 3;
         }
+        .content_box{
+            width:94%;
+            height:94%;
+            margin:auto auto;
+            background-color: rgb(30, 30, 30);
+        }
+        .content_box::-webkit-scrollbar {
+            width: 10px;
+        }
+        .content_box::-webkit-scrollbar-thumb {
+            background-color: #4d4d4d;
+        }
+        .content_box::-webkit-scrollbar-track {
+            background-color: rgb(44, 44, 44);
+        }
+        .project_display{
+            display: flex;
+            width:90%;
+            height:24rem;
+            margin:0 auto;
+            transform: translate(0, 50%)
+        }
+        .project_display div{
+            background-color: rgba(174, 174, 174, 0);
+            padding: 0 2rem;
+        }
+        .project_display div p{
+            color:white;
+        }
+        .project_display div img{
+            height: 80%;
+            width:auto;
+        }
+
+        @media (max-width: 1300px){
+            .project_display{
+                display: flex;
+                flex-direction: column; 
+                align-items: center; 
+                width:90%;
+                transform:none;
+                margin-top: 2rem;
+            }
+            .project_display div{
+                width:100%;
+                padding: 0 5%;
+            }
+            .project_display div img{
+                height:auto;
+                width:100%;
+            }
+            .project_display div p{
+                margin-top: 1rem;
+            }
+            .description{
+                margin-top:1rem
+            }
+        }
+
+        .description{
+            margin-top:5rem
+        }
     </style>
 </head>
 <body id = "body">
@@ -428,58 +495,111 @@
                 <span id = "con_path" class = "path_none">
                     <span class = "path_1">contact</span>
                 </span> 
-               
-
             </div>
-            <ul id = "slides">
-                <li id = "slide" style = "display: block; " >
-                    <div id ="title" class = "page">
-                    <div style = "width: 96%; height: 85%; position:absolute;left:2%;bottom:3%; background-color: black;vertical-align: middle;">
-                        <div style = "display: grid;grid-template-columns: 1fr 2fr;grid-template-rows: 1fr 2fr; background-color: aliceblue;margin: auto auto;height:30rem;width:50rem">
-                            <div style = "background-color: antiquewhite;" class = "item"></div>
-                            <div style = "background-color: rgb(196, 124, 29);"class = "item"></div>
-                            <div style = "background-color: rgb(93, 79, 61);"class = "item"></div>
-                        </div>
-                    </div>
-                    </div>
-                </li>
-                <li id = "slide" style = "background-color:rgb(51, 51, 51); ">
-                    <div id ="title" class = "page">
-                    <div  class = "page_content" style = "overflow-x: hidden;">
-                        <p style = "margin-top: 3%;margin-left: 5%;margin-right: 5%; padding: 0;">Date Simulator</p>
-                        <div style = "display: flex;margin-left: 5%; margin-right: 5%;flex-wrap: wrap; margin-top:6%;">
-                            <div style = "background-color: aqua; width: 45%; max-width: 25rem;">
-                                <img src = "dateSimulator.png" style = "height: 100%; width: 100%">
-                            </div>
-                            <div style = "width: 10%"></div>
-                            <div style = "width:45%;max-width: 25rem; font-size: 2rem;">설명dswfas,<br>adsfaffadffasdfdasf</div>
-                        </div>
-                    </div>
-                    </div></li>
-                <li id = "slide" style = "background-color: rgb(51, 51, 51); ">
-                    <div id ="title" class = "page">
-                    <div style = "width: 96%; height: 85%; position:absolute;left:2%;bottom:3%; background-color: black;vertical-align: middle;">
-                        <div style = "display:flex;height: 20rem;width: 90%;">
-                            <div style = "background-color: aqua; max-width: 25rem;">
-                                <div></div>
-                                <img src = "dateSimulator.png" style = "height: 100%; width: 100%">
-                            </div>
-                            <div style = "background-color: rgb(168, 168, 168); width: max-width: 25rem;">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li id = "slide" style = "background-color: rgb(51, 51, 51); "><div id ="title" class = "page">
-                    <div  class = "page_content">
-                        <p style = "margin-top: 3%;margin-left: 5%; padding: 0;">project3</p>
-                    </div>
-                    </div></li>
-                <li id = "slide" style = "background-color: rgb(51, 51, 51); "><div id ="title" class = "page">
-                    <div  class = "page_content">
-                        contact
-                    </div>
-                    </div></li>
 
+            <ul id = "slides">
+                 </li>
+                <li id = "slide">
+                    <div id ="title" class = "page">
+                        <div class = "content_box" style = " justify-content: center;align-items: center;">
+                            <div class = "project_display">
+                                <div>
+                                    <p style = "text-align: center;font-size: 1.8rem;margin: 1rem" >Pit-a-pat Date Simulator</p>
+                                    <img src = "dateSimulator.png">
+                                </div>
+                                <div style = "flex-grow: 1;">
+                                    <p class = "description">"Pit-a-pat Date Simulator" is a date- simulating program 
+                                        that allows you to experience dating with your favorite charactors.</p>
+                                        <br>
+                                        <br>
+                                    <p>Language: Python</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id = "slide">
+                    <div id ="title" class = "page">
+                        <div class = "content_box" style = " justify-content: center;align-items: center;">
+                            <div class = "project_display">
+                                <div>
+                                    <p style = "text-align: center;font-size: 1.8rem;margin: 1rem" >Pit-a-pat Date Simulator</p>
+                                    <img src = "dateSimulator.png">
+                                </div>
+                                <div style = "flex-grow: 1;">
+                                    <p class = "description">"Pit-a-pat Date Simulator" is a date- simulating program 
+                                        that allows you to experience dating with your favorite charactors.</p>
+                                        <br>
+                                        <br>
+                                    <p>Language: Python</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 </li>
+                <li id = "slide">
+                    <div id ="title" class = "page">
+                        <div class = "content_box" style = " justify-content: center;align-items: center;">
+                            <div class = "project_display">
+                                <div>
+                                    <p style = "text-align: center;font-size: 1.8rem;margin: 1rem" >Pit-a-pat Date Simulator</p>
+                                    <img src = "dateSimulator.png">
+                                </div>
+                                <div style = "flex-grow: 1;">
+                                    <p class = "description">"Pit-a-pat Date Simulator" is a date- simulating program 
+                                        that allows you to experience dating with your favorite charactors.</p>
+                                        <br>
+                                        <br>
+                                    <p>Language: Python</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 </li>
+                <li id = "slide">
+                    <div id ="title" class = "page">
+                        <div class = "content_box" style = " justify-content: center;align-items: center;">
+                            <div class = "project_display">
+                                <div>
+                                    <p style = "text-align: center;font-size: 1.8rem;margin: 1rem" >Pit-a-pat Date Simulator</p>
+                                    <img src = "dateSimulator.png">
+                                </div>
+                                <div style = "flex-grow: 1;">
+                                    <p class = "description">"Pit-a-pat Date Simulator" is a date- simulating program 
+                                        that allows you to experience dating with your favorite charactors.</p>
+                                        <br>
+                                        <br>
+                                    <p>Language: Python</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 </li>
+                <li id = "slide">
+                    <div id ="title" class = "page">
+                        <div class = "content_box" style = " justify-content: center;align-items: center;">
+                            <div class = "project_display">
+                                <div>
+                                    <p style = "text-align: center;font-size: 1.8rem;margin: 1rem" >Pit-a-pat Date Simulator</p>
+                                    <img src = "dateSimulator.png">
+                                </div>
+                                <div style = "flex-grow: 1;">
+                                    <p class = "description">"Pit-a-pat Date Simulator" is a date- simulating program 
+                                        that allows you to experience dating with your favorite charactors.</p>
+                                        <br>
+                                        <br>
+                                    <p>Language: Python</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <div id = "bars_container">
                 <label for ="r1" class = "bar top_bars" id = "bar1">
