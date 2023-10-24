@@ -74,7 +74,6 @@
             width:60%; 
             margin: 1.8rem auto;
             margin-bottom: 0;
-            /* border: 1px solid black; */
             border-radius: 56%;
         }
         .profile_info{
@@ -258,7 +257,6 @@
             position:relative
         }
         .page_content{
-            font-size: 2rem;
             width:94%;
             height: 80%;
             background: rgb(44, 44, 44);  
@@ -347,6 +345,12 @@
             position:absolute;
             left: 5.5rem
         }
+        .item:nth-child(1) {
+	        grid-column-start: 2;
+	        grid-column-end: 3;
+	        grid-row-start: 1;
+	        grid-row-end: 3;
+        }
     </style>
 </head>
 <body id = "body">
@@ -394,24 +398,11 @@
                     <span class = "project_file">project3</span>
                 </label></li>
             </ul>     
-
-            <!-- <label for = "info3_check" id = "info3_label" class = "info_label">
-                <span class="material-symbols-outlined" id="arrow_right">chevron_right</span>
-                <span class="material-symbols-outlined"id="arrow_down">expand_more</span>
-                <span class = "folder">contact</span>
-            </label> -->
             <label for ="r5"  id = "info3_label" class = "info_label">
                 <span class="material-symbols-outlined" style = "font-size:1.3rem">person</span>
                 <span class = "folder">contact</span></label>
             </label>
-            <!-- <ul id = "contact" class = "profile_info" style = "color: white">
-                <li>youngchanahn1@gmail.com</li>
-                <li>tel</li>
-                <li>github</li>
-                <li>instagram</li>
-            </ul>       -->
         </div>
-
         <div id = contents>
             <div id = "top_dec" class = "path">
                 <span style = "margin-left: 0.5rem">Youngchan's Portfolio</span>
@@ -440,71 +431,47 @@
                
 
             </div>
-            <!-- <input type="radio" name="rad" id = "r1" class = "radio_buttons" checked>
-            <input type="radio"name="rad" id ="r2" class = "radio_buttons">
-            <input type="radio" name = 'rad' id = "r3" class = "radio_buttons">  
-            <input type="radio" name = 'rad' id = "r4" class = "radio_buttons">    -->
             <ul id = "slides">
                 <li id = "slide" style = "display: block; " >
                     <div id ="title" class = "page">
-                    <div  class = "page_content">
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
-                        <p style = "text-align: center;">Hello, world! My name is Youngchan Ahn</p>
+                    <div style = "width: 96%; height: 85%; position:absolute;left:2%;bottom:3%; background-color: black;vertical-align: middle;">
+                        <div style = "display: grid;grid-template-columns: 1fr 2fr;grid-template-rows: 1fr 2fr; background-color: aliceblue;margin: auto auto;height:30rem;width:50rem">
+                            <div style = "background-color: antiquewhite;" class = "item"></div>
+                            <div style = "background-color: rgb(196, 124, 29);"class = "item"></div>
+                            <div style = "background-color: rgb(93, 79, 61);"class = "item"></div>
+                        </div>
                     </div>
                     </div>
                 </li>
-                <li id = "slide" style = "background-color:rgb(51, 51, 51); "><div id ="title" class = "page">
-                    <div  class = "page_content">
-                        <p style = "margin-top: 3%;margin-left: 5%; padding: 0;">Date Simulator</p>
-                        <div style = "display: flex;width:90%;margin: 0 auto; height: 20rem ">
-                            <div style = "background-color: aqua;">
-                                <img src = "dateSimulator.png" style = "width: 100%;height: 100%">
+                <li id = "slide" style = "background-color:rgb(51, 51, 51); ">
+                    <div id ="title" class = "page">
+                    <div  class = "page_content" style = "overflow-x: hidden;">
+                        <p style = "margin-top: 3%;margin-left: 5%;margin-right: 5%; padding: 0;">Date Simulator</p>
+                        <div style = "display: flex;margin-left: 5%; margin-right: 5%;flex-wrap: wrap; margin-top:6%;">
+                            <div style = "background-color: aqua; width: 45%; max-width: 25rem;">
+                                <img src = "dateSimulator.png" style = "height: 100%; width: 100%">
                             </div>
-                            <div style = "width:50%;">설명</div>
-
-
+                            <div style = "width: 10%"></div>
+                            <div style = "width:45%;max-width: 25rem; font-size: 2rem;">설명dswfas,<br>adsfaffadffasdfdasf</div>
                         </div>
                     </div>
                     </div></li>
-                <li id = "slide" style = "background-color: rgb(51, 51, 51); "><div id ="title" class = "page">
-                    <div  class = "page_content">
-                        project2
+                <li id = "slide" style = "background-color: rgb(51, 51, 51); ">
+                    <div id ="title" class = "page">
+                    <div style = "width: 96%; height: 85%; position:absolute;left:2%;bottom:3%; background-color: black;vertical-align: middle;">
+                        <div style = "display:flex;height: 20rem;width: 90%;">
+                            <div style = "background-color: aqua; max-width: 25rem;">
+                                <div></div>
+                                <img src = "dateSimulator.png" style = "height: 100%; width: 100%">
+                            </div>
+                            <div style = "background-color: rgb(168, 168, 168); width: max-width: 25rem;">
+                            </div>
+                        </div>
                     </div>
-                    </div></li>
+                </li>
                 <li id = "slide" style = "background-color: rgb(51, 51, 51); "><div id ="title" class = "page">
                     <div  class = "page_content">
-                        project3
+                        <p style = "margin-top: 3%;margin-left: 5%; padding: 0;">project3</p>
                     </div>
                     </div></li>
                 <li id = "slide" style = "background-color: rgb(51, 51, 51); "><div id ="title" class = "page">
