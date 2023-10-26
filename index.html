@@ -357,6 +357,9 @@
 	        grid-row-end: 3;
         }
         .content_box{
+            display:flex;
+            justify-content: center;
+            align-items: center;
             width:94%;
             height:94%;
             margin:auto auto;
@@ -376,8 +379,8 @@
             display: flex;
             width:90%;
             height:24rem;
-            margin:0 auto;
-            transform: translate(0, 50%)
+            margin:auto auto;
+            /* transform: translate(0, 30%) */
         }
         .project_display div{
             background-color: rgba(174, 174, 174, 0);
@@ -503,33 +506,19 @@
                 <li id = "slide">
                     <div id ="title" class = "page">
                         <div class = "content_box" style = "position:absolute;left:3%;top:3%" >
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-                        <p style = "font-size: xx-large; color: white;">Hello world</p>
-
+                            <div class = "project_display">
+                                <div>
+                                    <p style = "text-align: center;font-size: 1.8rem;margin: 1rem" >Pit-a-pat Date Simulator</p>
+                                    <img src = "dateSimulator.png">
+                                </div>
+                                <div style = "flex-grow: 1;">
+                                    <p class = "description">"Pit-a-pat Date Simulator" is a date- simulating program 
+                                        that allows you to experience dating with your favorite charactors.</p>
+                                        <br>
+                                        <br>
+                                    <p>Language: Python</p>
+                                </div>
+                            </div>
                  
                         </div>
                     </div>
